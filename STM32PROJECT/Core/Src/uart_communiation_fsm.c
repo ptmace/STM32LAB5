@@ -19,7 +19,6 @@ void uart_communiation_fsm(){
 					ADC_value = HAL_ADC_GetValue(&hadc1);
 					HAL_ADC_Stop(&hadc1);
 					HAL_UART_Transmit(&huart2, (void*)str, sprintf(str, "\r\n"), 1000);
-					status_uart = SEND_ADC;
 					setTimer(0, 3000);
 				}
 			}

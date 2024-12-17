@@ -27,7 +27,6 @@ void command_parser_fsm(){
 			else{
 				if(temp == '!'){
 					buffer_cmd_flag = 0;
-					status_cmd = WAIT_END_CHAR;
 				}
 				else{
 					buffer_cmd[index_buffer_cmd++] = temp;
